@@ -1,0 +1,61 @@
+Hello everyone, my name is kamal and I'm from the UK. This is my final project for CS50 Introduction to Programming with 
+Python. In this project, as the name suggests I have created a password manager to store passwords for different 
+websites. Let's dive into the details.
+
+
+First, we import the necessary modules: tabulate .....
+    
+    
+The `main` function, it displays the title "Passwd Manager" using pyfiglet, then calls these functions.
+
+
+The `create_master_password` function checks if a master password file exists. If it doesn't, the user is prompted to 
+create and confirm a master password. The two inputs are compared, and if they match, the password is salted and hashed 
+using bcrypt. The hashed password is then stored in a separate file.
+
+
+The `validate_master_password` function reads the hashed password from the file and gives the user 3 attempts to enter the 
+correct master password. If the user fails to enter the correct password after 3 attempts, the program exits.
+
+
+The `select_mode` function allows the user to choose between adding a new password, viewing the password vault, or exiting 
+the password manager. Depending on the mode selected, the appropriate function is called.
+
+
+The `store_password` function prompts the user to enter their email or username, password, website URL, and any notes. The 
+password is salted and hashed using bcrypt before being stored in a dictionary along with the other details. The dictionary 
+is then written to a file in JSON format.
+
+The `view_password` function reads from the file and displays the stored details in a tabular format using tabulate.
+
+
+When you run the program, you'll see the title "Passwd Manager" displayed using the pyfiglet. You'll then be prompted to
+enter a master password, which you'll need to confirm. Once that's done, you need to supply the master password to log in.
+If you provide the wrong password 3 times, the program will exit.
+
+then calls the functions to create and 
+validate the master password, and finally allows the user to select a mode.
+
+
+The `create_master_password` function checks if a master password file exists. If it doesn't, the user is prompted to 
+create and confirm a master password. The two inputs are compared, and if they match, the password is salted and hashed 
+using bcrypt. The hashed password is then stored in a separate file.
+
+
+The `validate_master_password` function reads the hashed password from the file and gives the user 3 attempts to enter the 
+correct master password. If the user fails to enter the correct password after 3 attempts, the program exits.
+
+
+The `select_mode` function allows the user to choose between adding a new password, viewing the password vault, or exiting 
+the password manager. Depending on the mode selected, the appropriate function is called.
+
+
+The `store_password` function prompts the user to enter their email or username, password, website URL, and any notes. The 
+password is salted and hashed using bcrypt before being stored in a dictionary along with the other details. The dictionary 
+is then written to a file in JSON format.
+
+
+The `view_password` function reads from the file and displays the stored details in a tabular format using tabulate.
+
+
+That's all for this project. I hope you found it interesting and informative.
